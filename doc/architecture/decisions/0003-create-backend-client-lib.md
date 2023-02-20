@@ -17,4 +17,3 @@ Create client library and use it as dependency in components that want to read t
 ## Consequences
 
 Client will be added as separate package, tests will utilise mocked version.
-

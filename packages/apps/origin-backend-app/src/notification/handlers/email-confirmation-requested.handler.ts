@@ -5,7 +5,8 @@ import { MailService } from '../../mail';
 
 @EventsHandler(EmailConfirmationRequestedEvent)
 export class EmailConfirmationRequestedHandler
-    implements IEventHandler<EmailConfirmationRequestedEvent> {
+    implements IEventHandler<EmailConfirmationRequestedEvent>
+{
     private readonly logger = new Logger(EmailConfirmationRequestedHandler.name);
 
     constructor(private readonly mailService: MailService) {}

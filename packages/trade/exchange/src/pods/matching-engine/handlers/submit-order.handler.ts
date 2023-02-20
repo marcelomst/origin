@@ -7,7 +7,8 @@ import { MatchingEngineService } from '../matching-engine.service';
 
 @CommandHandler(SubmitOrderCommand)
 export class SubmitOrderHandler<TProduct, TProductFilter>
-    implements ICommandHandler<SubmitOrderCommand> {
+    implements ICommandHandler<SubmitOrderCommand>
+{
     private readonly logger = new Logger(SubmitOrderHandler.name);
 
     constructor(

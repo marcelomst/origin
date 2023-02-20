@@ -4,7 +4,8 @@ import { DeviceService } from '../device.service';
 
 @QueryHandler(ValidateDeviceOwnershipQuery)
 export class ValidateDeviceOwnershipCommandHandler
-    implements IQueryHandler<ValidateDeviceOwnershipQuery> {
+    implements IQueryHandler<ValidateDeviceOwnershipQuery>
+{
     constructor(private readonly deviceService: DeviceService) {}
 
     public async execute({

@@ -6,7 +6,8 @@ import { TradeService } from './trade.service';
 
 @EventsHandler(BulkTradeExecutedEvent)
 export class TradeExecutedEventHandler<TProduct, TProductFilter>
-    implements IEventHandler<BulkTradeExecutedEvent> {
+    implements IEventHandler<BulkTradeExecutedEvent>
+{
     private readonly logger = new Logger(TradeExecutedEventHandler.name);
 
     constructor(private readonly tradeService: TradeService<TProduct, TProductFilter>) {}

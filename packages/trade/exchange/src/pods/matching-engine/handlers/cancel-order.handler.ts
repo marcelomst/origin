@@ -6,7 +6,8 @@ import { MatchingEngineService } from '../matching-engine.service';
 
 @CommandHandler(CancelOrderCommand)
 export class CancelOrderHandler<TProduct, TProductFilter>
-    implements ICommandHandler<CancelOrderCommand> {
+    implements ICommandHandler<CancelOrderCommand>
+{
     constructor(
         private readonly matchingEngineService: MatchingEngineService<TProduct, TProductFilter>
     ) {}

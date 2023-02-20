@@ -15,7 +15,8 @@ import { ExternalDeviceAlreadyUsedError, SmartMeterAlreadyUsedError } from './er
 
 @QueryHandler(ValidateDeviceOwnershipQuery)
 export class StubValidateDeviceOwnershipQueryHandler
-    implements IQueryHandler<ValidateDeviceOwnershipQuery> {
+    implements IQueryHandler<ValidateDeviceOwnershipQuery>
+{
     public async execute({
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         ownerId,
@@ -29,12 +30,12 @@ export class StubValidateDeviceOwnershipQueryHandler
 describe('The DeviceRegistryService', () => {
     let deviceRegistryService: DeviceRegistryService;
 
-    const loggedInUser = ({
+    const loggedInUser = {
         id: 1,
         organization: { id: '1000' },
         status: UserStatus.Active,
         ownerId: '1000'
-    } as unknown) as ILoggedInUser;
+    } as unknown as ILoggedInUser;
 
     const newDevice = new NewDeviceDTO({ externalRegistryId: 'EXT-1' });
 

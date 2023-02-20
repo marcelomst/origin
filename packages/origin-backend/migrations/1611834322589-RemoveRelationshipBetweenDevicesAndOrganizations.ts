@@ -1,7 +1,8 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
 export class RemoveRelationshipBetweenDevicesAndOrganizations1611834322589
-    implements MigrationInterface {
+    implements MigrationInterface
+{
     name = 'RemoveRelationshipBetweenDevicesAndOrganizations1611834322589';
 
     public async up(queryRunner: QueryRunner): Promise<void> {

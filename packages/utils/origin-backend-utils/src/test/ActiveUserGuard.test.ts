@@ -14,7 +14,7 @@ describe('DeviceTypeService tests', () => {
     });
 
     it('Active user should pass guard', () => {
-        const context: ExecutionContext = ({
+        const context: ExecutionContext = {
             switchToHttp: () => {
                 return {
                     getRequest: () => {
@@ -26,13 +26,13 @@ describe('DeviceTypeService tests', () => {
                     }
                 };
             }
-        } as unknown) as ExecutionContext;
+        } as unknown as ExecutionContext;
         // eslint-disable-next-line no-unused-expressions
         expect(guard.canActivate(context)).true;
     });
 
     it('Inactive user should not pass guard', () => {
-        const context: ExecutionContext = ({
+        const context: ExecutionContext = {
             switchToHttp: () => {
                 return {
                     getRequest: () => {
@@ -44,7 +44,7 @@ describe('DeviceTypeService tests', () => {
                     }
                 };
             }
-        } as unknown) as ExecutionContext;
+        } as unknown as ExecutionContext;
         // eslint-disable-next-line no-unused-expressions
         expect(guard.canActivate.bind(context)).to.throw;
     });

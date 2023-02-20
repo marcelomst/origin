@@ -12,7 +12,6 @@ import {
 } from '@energyweb/issuer-api';
 import { IrecModule } from '@energyweb/origin-organization-irec-api';
 
-
 @Module({
     imports: [
         CqrsModule,

@@ -7,7 +7,8 @@ import { MailService } from '../../mail';
 
 @EventsHandler(OrganizationNameAlreadyTakenEvent)
 export class OrganizationNameAlreadyTakenHandler
-    implements IEventHandler<OrganizationNameAlreadyTakenEvent> {
+    implements IEventHandler<OrganizationNameAlreadyTakenEvent>
+{
     private readonly logger = new Logger(OrganizationNameAlreadyTakenHandler.name);
 
     constructor(

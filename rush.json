@@ -146,7 +146,7 @@
      * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
      * section of the common-versions.json.
      */
-    // "ensureConsistentVersions": true,
+    "ensureConsistentVersions": true,
 
     /**
      * Large monorepos can become intimidating for newcomers if project folder paths don't follow
@@ -380,58 +380,58 @@
      * 3. It's useful to have a centralized inventory of all projects and their important metadata.
      */
     "projects": [
-        {
-            "packageName": "@energyweb/origin-backend-irec-app",
-            "projectFolder": "packages/apps/origin-backend-irec-app"
-        },
-        {
-            "packageName": "@energyweb/origin-device-registry-api",
-            "projectFolder": "packages/devices/origin-device-registry-api"
-        },
-        {
-            "packageName": "@energyweb/origin-device-registry-api-client",
-            "projectFolder": "packages/devices/origin-device-registry-api-client"
-        },
-        {
-            "packageName": "@energyweb/origin-device-registry-irec-local-api",
-            "projectFolder": "packages/devices/origin-device-registry-irec-local-api"
-        },
-        {
-            "packageName": "@energyweb/origin-device-registry-irec-local-api-client",
-            "projectFolder": "packages/devices/origin-device-registry-irec-local-api-client"
-        },
-        {
-            "packageName": "@energyweb/origin-energy-api",
-            "projectFolder": "packages/devices/origin-energy-api"
-        },
-        {
-            "packageName": "@energyweb/origin-energy-api-client",
-            "projectFolder": "packages/devices/origin-energy-api-client"
-        },
+        // {
+        //     "packageName": "@energyweb/origin-backend-irec-app",
+        //     "projectFolder": "packages/apps/origin-backend-irec-app"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-device-registry-api",
+        //     "projectFolder": "packages/devices/origin-device-registry-api"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-device-registry-api-client",
+        //     "projectFolder": "packages/devices/origin-device-registry-api-client"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-device-registry-irec-local-api",
+        //     "projectFolder": "packages/devices/origin-device-registry-irec-local-api"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-device-registry-irec-local-api-client",
+        //     "projectFolder": "packages/devices/origin-device-registry-irec-local-api-client"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-energy-api",
+        //     "projectFolder": "packages/devices/origin-energy-api"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-energy-api-client",
+        //     "projectFolder": "packages/devices/origin-energy-api-client"
+        // },
         {
             "packageName": "@energyweb/origin-organization-irec-api",
             "projectFolder": "packages/organizations/origin-organization-irec-api"
         },
-        {
-            "packageName": "@energyweb/origin-organization-irec-api-client",
-            "projectFolder": "packages/organizations/origin-organization-irec-api-client"
-        },
-        {
-            "packageName": "@energyweb/origin-backend",
-            "projectFolder": "packages/origin-backend"
-        },
-        {
-            "packageName": "@energyweb/origin-backend-client",
-            "projectFolder": "packages/origin-backend-client"
-        },
+        // // {
+        //     "packageName": "@energyweb/origin-organization-irec-api-client",
+        //     "projectFolder": "packages/organizations/origin-organization-irec-api-client"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-backend",
+        //     "projectFolder": "packages/origin-backend"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-backend-client",
+        //     "projectFolder": "packages/origin-backend-client"
+        // },
         {
             "packageName": "@energyweb/origin-backend-core",
             "projectFolder": "packages/origin-backend-core"
         },
-        {
-            "packageName": "@energyweb/migrations-irec",
-            "projectFolder": "packages/tools/migrations-irec"
-        },
+        // {
+        //     "packageName": "@energyweb/migrations-irec",
+        //     "projectFolder": "packages/tools/migrations-irec"
+        // },
         {
             "packageName": "@energyweb/issuer",
             "projectFolder": "packages/traceability/issuer"
@@ -456,38 +456,38 @@
             "packageName": "@energyweb/issuer-irec-api-wrapper",
             "projectFolder": "packages/traceability/issuer-irec-api-wrapper"
         },
-        {
-            "packageName": "@energyweb/exchange",
-            "projectFolder": "packages/trade/exchange"
-        },
-        {
-            "packageName": "@energyweb/exchange-client",
-            "projectFolder": "packages/trade/exchange-client"
-        },
-        {
-            "packageName": "@energyweb/exchange-core",
-            "projectFolder": "packages/trade/exchange-core"
-        },
-        {
-            "packageName": "@energyweb/exchange-core-irec",
-            "projectFolder": "packages/trade/exchange-core-irec"
-        },
-        {
-            "packageName": "@energyweb/exchange-io-erc1888",
-            "projectFolder": "packages/trade/exchange-io-erc1888"
-        },
-        {
-            "packageName": "@energyweb/exchange-irec",
-            "projectFolder": "packages/trade/exchange-irec"
-        },
-        {
-            "packageName": "@energyweb/exchange-irec-client",
-            "projectFolder": "packages/trade/exchange-irec-client"
-        },
-        {
-            "packageName": "@energyweb/exchange-token-account",
-            "projectFolder": "packages/trade/exchange-token-account"
-        },
+        // {
+        //     "packageName": "@energyweb/exchange",
+        //     "projectFolder": "packages/trade/exchange"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-client",
+        //     "projectFolder": "packages/trade/exchange-client"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-core",
+        //     "projectFolder": "packages/trade/exchange-core"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-core-irec",
+        //     "projectFolder": "packages/trade/exchange-core-irec"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-io-erc1888",
+        //     "projectFolder": "packages/trade/exchange-io-erc1888"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-irec",
+        //     "projectFolder": "packages/trade/exchange-irec"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-irec-client",
+        //     "projectFolder": "packages/trade/exchange-irec-client"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-token-account",
+        //     "projectFolder": "packages/trade/exchange-token-account"
+        // },
         {
             "packageName": "@energyweb/origin-backend-utils",
             "projectFolder": "packages/utils/origin-backend-utils"
@@ -495,43 +495,43 @@
         {
             "packageName": "@energyweb/utils-general",
             "projectFolder": "packages/utils/utils-general"
-        },
-        {
-            "packageName": "@energyweb/exchange-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/exchange"
-        },
-        {
-            "packageName": "@energyweb/exchange-irec-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/exchange-irec"
-        },
-        {
-            "packageName": "@energyweb/origin-device-registry-api-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/origin-device-registry-api"
-        },
-        {
-            "packageName": "@energyweb/origin-device-registry-irec-local-api-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/origin-device-registry-irec-local-api"
-        },
-        {
-            "packageName": "@energyweb/origin-energy-api-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/origin-energy-api"
-        },
-        {
-            "packageName": "@energyweb/origin-organization-irec-api-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/origin-organization-irec-api"
-        },
-        {
-            "packageName": "@energyweb/origin-backend-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/origin-backend"
-        },
-        {
-            "packageName": "@energyweb/issuer-irec-api-react-query-client",
-            "projectFolder": "packages/api-clients/react-query/issuer-irec-api"
-        },
-        {
-            "packageName": "ui-packages",
-            "projectFolder": "packages/ui"
         }
+        // {
+        //     "packageName": "@energyweb/exchange-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/exchange"
+        // },
+        // {
+        //     "packageName": "@energyweb/exchange-irec-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/exchange-irec"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-device-registry-api-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/origin-device-registry-api"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-device-registry-irec-local-api-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/origin-device-registry-irec-local-api"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-energy-api-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/origin-energy-api"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-organization-irec-api-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/origin-organization-irec-api"
+        // },
+        // {
+        //     "packageName": "@energyweb/origin-backend-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/origin-backend"
+        // },
+        // {
+        //     "packageName": "@energyweb/issuer-irec-api-react-query-client",
+        //     "projectFolder": "packages/api-clients/react-query/issuer-irec-api"
+        // },
+        // {
+        //     "packageName": "ui-packages",
+        //     "projectFolder": "packages/ui"
+        // }
         // {
         //   /**
         //    * The NPM package name of the project (must match package.json)

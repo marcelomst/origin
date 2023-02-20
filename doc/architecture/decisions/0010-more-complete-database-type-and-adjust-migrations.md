@@ -17,10 +17,13 @@ A decision has been made to move the Origin SDK to a mode production-ready datab
 ## Consequences
 
 ### Easier production-readiness
+
 This will remove some unnecessary steps to enable production usage of Origin for users that plan on using the Origin SDK in production.
 
 ### More complex initial setup
+
 Some changes will be needed in the way the development environment is set up. The user will have to install the PostgreSQL database on their local machine when developing.
 
 ### Change in @energyweb/migrations
+
 Migations should be adjusted to be migrated directly to the database itself, without using the APIs to seed the database.

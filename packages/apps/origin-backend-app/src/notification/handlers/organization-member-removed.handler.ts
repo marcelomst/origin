@@ -5,7 +5,8 @@ import { MailService } from '../../mail';
 
 @EventsHandler(OrganizationMemberRemovedEvent)
 export class OrganizationMemberRemovedHandler
-    implements IEventHandler<OrganizationMemberRemovedEvent> {
+    implements IEventHandler<OrganizationMemberRemovedEvent>
+{
     private readonly logger = new Logger(OrganizationMemberRemovedHandler.name);
 
     constructor(private readonly mailService: MailService) {}

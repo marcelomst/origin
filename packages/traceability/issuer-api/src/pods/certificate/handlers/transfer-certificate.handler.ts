@@ -40,7 +40,7 @@ export class TransferCertificateHandler implements ICommandHandler<TransferCerti
             blockchainProperties,
             certificate.schemaVersion
         ).sync({
-            creationTransactionHash: certificate.creationTransactionHash,
+            creationTransactionHash: certificate.creationTransactionHash
         });
 
         if (certificate.issuedPrivately) {

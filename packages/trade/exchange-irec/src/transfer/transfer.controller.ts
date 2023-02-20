@@ -1,10 +1,5 @@
 import { ILoggedInUser, Role } from '@energyweb/origin-backend-core';
-import {
-    ActiveUserGuard,
-    Roles,
-    RolesGuard,
-    UserDecorator
-} from '@energyweb/origin-backend-utils';
+import { ActiveUserGuard, Roles, RolesGuard, UserDecorator } from '@energyweb/origin-backend-utils';
 import {
     Body,
     Controller,
@@ -13,7 +8,7 @@ import {
     Post,
     UseGuards,
     UsePipes,
-    ValidationPipe,
+    ValidationPipe
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { ApiBearerAuth, ApiBody, ApiResponse, ApiTags } from '@nestjs/swagger';
@@ -26,9 +21,7 @@ import { IrecRequestClaimCommand } from './command';
 @Controller('irec/transfer')
 @UsePipes(ValidationPipe)
 export class IrecTransferController {
-    constructor(
-        private commandBus: CommandBus
-    ) {}
+    constructor(private commandBus: CommandBus) {}
 
     @Post('claim')
     @UseGuards(AuthGuard(), ActiveUserGuard, RolesGuard)
@@ -39,10 +32,6 @@ export class IrecTransferController {
         @UserDecorator() { ownerId }: ILoggedInUser,
         @Body() claim: IrecRequestClaimDTO
     ): Promise<void> {
-        return this.commandBus.execute(new IrecRequestClaimCommand(
-            ownerId,
-            claim
-        ));
-        
+        return this.commandBus.execute(new IrecRequestClaimCommand(ownerId, claim));
     }
 }

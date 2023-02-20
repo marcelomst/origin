@@ -48,13 +48,8 @@ describe('DirectBuy orders tests', () => {
     };
 
     before(async () => {
-        ({
-            transferService,
-            accountService,
-            databaseService,
-            orderService,
-            app
-        } = await bootstrapTestInstance());
+        ({ transferService, accountService, databaseService, orderService, app } =
+            await bootstrapTestInstance());
 
         await app.init();
     });

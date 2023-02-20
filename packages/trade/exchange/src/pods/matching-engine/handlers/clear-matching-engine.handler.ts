@@ -6,7 +6,8 @@ import { MatchingEngineService } from '../matching-engine.service';
 
 @CommandHandler(ClearMatchingEngineCommand)
 export class ClearMatchingEngineHandler<TProduct, TProductFilter>
-    implements ICommandHandler<ClearMatchingEngineCommand> {
+    implements ICommandHandler<ClearMatchingEngineCommand>
+{
     constructor(
         private readonly matchingEngineService: MatchingEngineService<TProduct, TProductFilter>
     ) {}
